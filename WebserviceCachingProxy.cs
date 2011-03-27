@@ -15,7 +15,7 @@ namespace xCme.Tests
         public WebServiceProxyException(string Message) : base(Message) { }
     }
 
-    public class WebServicesCachingProxy<T> : DynamicObject where T : SoapHttpClientProtocol
+    public class WebServiceCachingProxy<T> : DynamicObject where T : SoapHttpClientProtocol
     {
         #region Data Members
 
@@ -34,9 +34,9 @@ namespace xCme.Tests
 
         #region Constructors
 
-        public WebServicesCachingProxy() { }
+        public WebServiceCachingProxy() { }
 
-        public WebServicesCachingProxy(T service)
+        public WebServiceCachingProxy(T service)
         {
             this.BindTo(service);
         }
