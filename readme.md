@@ -10,8 +10,6 @@ Wamp, wamp. More will go here. The crux of this is that it's a simple drop-in fo
         Assert.IsNotNull(records);	
     }
 
-and 
- 
     [Test]
     public void ListRecordsReturnsAtLeastOneElement()
     {
