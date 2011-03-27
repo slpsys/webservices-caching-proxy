@@ -17,7 +17,7 @@ Wamp, wamp. More will go here. The crux of this is that it's a simple drop-in fo
         Assert.GreaterOrEqual(1, records);	
     }
 
-The easiest way to go about this is to simply create a `SoapHttpClientProtocol`-derived client object as you normally would, create your tests so that [if you're using an IDE] you can get the benefits o code completion, then simply change your client construction:
+The easiest way to go about this is to simply create a `SoapHttpClientProtocol`-derived client object as you normally would, create your tests so that [if you're using an IDE] you can get the benefits of code completion, then simply change your client construction:
 
     // var service = new MyRemoteServiceClient();
     dynamic service = new WebServiceCachingProxy<MyRemoteServiceClient>();
