@@ -1,4 +1,5 @@
-= ASMX Web Services Caching Proxy =
+ASMX Web Services Caching Proxy
+===============================
  
 Wamp, wamp. More will go here. The crux of this is that it's a simple drop-in for WSDL-generated .NET ASMX client endpoints using System.Dynamic, that caches identical (parameter/value pairs for an individual method match) calls locally. This speeds up things like: unit testing. You can keep simple TDD-like expressivity of things like:
 
